@@ -183,7 +183,3 @@ Many weather platforms focus on displaying data. Mausam focuses on **meaning**:
 | Dr. Sukhvir Singh | Mentor       |
 
 *Panjab University, UIET, Chandigarh*
-
----
-
-<p align="center">Made with ❤️ by Team Mausam · Smart India Hackathon 2026</p>
