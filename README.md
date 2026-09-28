@@ -126,11 +126,10 @@ RECOMMENDATION ENGINE
 - 📍 **Location-aware weather** — automatic or manual location selection
 - 🎯 **Interest-based personalization** — choose profiles such as Runner, Cyclist, Photographer, Traveler, Student, Agriculture
 - 🧠 **Contextual recommendations** — plain-language guidance such as "Good conditions for a morning run" instead of raw numbers alone
-- 📡 **Live meteorological data** — powered by IMD data `[FILL IN: confirm exact source/API]`
-- 🔔 **Alerts** `[FILL IN: implemented? Describe or remove]`
-- 🌐 **Multi-language support** `[FILL IN: e.g. English/Hindi, or remove]`
-- 📱 **Responsive homepage** `[FILL IN: web / mobile / both]`
-
+- 📡 **Live meteorological data**
+- 🔔 **Alerts** 
+- 🌐 **Multi-language support**
+- 📱 **Responsive homepage** 
 ---
 
 # 🧠 4. How Personalization Works
