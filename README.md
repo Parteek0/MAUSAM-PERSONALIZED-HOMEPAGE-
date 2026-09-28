@@ -1,16 +1,20 @@
-# 🌦️ Mausam
+# 🌦️ MAUSAM
 
-### Personalized Weather Intelligence Platform
+## Personalized Weather Intelligence Platform
 
-> **Weather data is everywhere. Personalized weather decisions are not.**
+> **From Weather Data to Personalized Decisions**
 
 Mausam is a personalized weather intelligence platform developed for **Smart India Hackathon 2026**.
 
-Instead of simply displaying weather information, Mausam combines **live meteorological data with user interests** to turn weather conditions into understandable and actionable recommendations.
+The objective of Mausam is to transform raw weather information into meaningful, personalized and actionable insights based on the user's location, interests and activities.
+
+Instead of simply answering **"What is the weather?"**, Mausam aims to answer:
+
+> **"What does the current weather mean for me, and what should I do?"**
 
 ---
 
-## 🏆 Smart India Hackathon 2026
+# 🏆 Smart India Hackathon 2026
 
 | | |
 |---|---|
@@ -20,54 +24,46 @@ Instead of simply displaying weather information, Mausam combines **live meteoro
 | **Institute** | UIET, Panjab University |
 | **Branch** | B.Tech – Electrical & Electronics Engineering |
 | **Team Leader** | Parteek |
+| **Team Member** | Samridhi |
+| **Team Member** | Rajit |
+| **Team Member** | Srishti |
+| **Team Member** | Prashant |
+| **Team Member** | Aditya |
 | **Mentor** | Dr. Sukhvir Singh |
 
 ---
 
-# 💡 The Idea
+# 📌 Problem Statement
 
-Weather applications generally answer:
+Weather information is widely available through different applications and websites. However, most weather platforms primarily provide raw meteorological information such as:
 
-> **"What is the weather?"**
+- Temperature
+- Humidity
+- Rainfall
+- Wind
+- Forecast
+- Weather conditions
 
-Mausam aims to answer:
-
-> **"What does this weather mean for me?"**
-
-The same weather can have completely different implications for different people.
+The major challenge is that **the same weather condition does not have the same meaning for every person**.
 
 For example:
 
-- A runner may want to know whether outdoor exercise is comfortable.
-- A photographer may care about suitable outdoor conditions.
-- A traveler may want to understand upcoming weather.
-- A cyclist may need to consider rain and wind.
-- A student may want to plan outdoor study.
-- An agriculture-focused user may require weather information for planning outdoor activities.
+- A runner needs to know whether outdoor running is suitable.
+- A cyclist needs to consider rain and wind conditions.
+- A photographer may be interested in outdoor conditions and visibility.
+- A traveler needs information that helps with trip planning.
+- A student may want to know whether outdoor study is practical.
+- A person interested in agriculture may require weather information for agricultural planning.
 
-Mausam brings these contexts together through personalization.
+Traditional weather dashboards generally do not understand these individual contexts.
 
----
-
-# 🎯 Solution
-
-Mausam combines three major inputs:
+Therefore, there is a need for a system that can combine:
 
 ```text
-             LIVE WEATHER
-                  +
-           USER INTERESTS
-                  +
-        LOCATION INFORMATION
-                  │
-                  ▼
-       ┌────────────────────┐
-       │  MAUSAM ENGINE      │
-       │                    │
-       │ Personalization    │
-       │ Recommendation     │
-       │ Planning           │
-       └─────────┬──────────┘
-                 │
-                 ▼
-       ACTIONABLE INSIGHTS
+Weather Data
+     +
+Location
+     +
+User Interests
+     ↓
+Personalized Weather Intelligence
