@@ -1,16 +1,73 @@
-# React + Vite
+# 🌦️ Mausam
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Personalized Weather Intelligence Platform
 
-Currently, two official plugins are available:
+> **Weather data is everywhere. Personalized weather decisions are not.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Mausam is a personalized weather intelligence platform developed for **Smart India Hackathon 2026**.
 
-## React Compiler
+Instead of simply displaying weather information, Mausam combines **live meteorological data with user interests** to turn weather conditions into understandable and actionable recommendations.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🏆 Smart India Hackathon 2026
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| | |
+|---|---|
+| **Project** | Mausam |
+| **Event** | Smart India Hackathon 2026 |
+| **Institution** | Panjab University, Chandigarh |
+| **Institute** | UIET, Panjab University |
+| **Branch** | B.Tech – Electrical & Electronics Engineering |
+| **Team Leader** | Parteek |
+| **Mentor** | Dr. Sukhvir Singh |
+
+---
+
+# 💡 The Idea
+
+Weather applications generally answer:
+
+> **"What is the weather?"**
+
+Mausam aims to answer:
+
+> **"What does this weather mean for me?"**
+
+The same weather can have completely different implications for different people.
+
+For example:
+
+- A runner may want to know whether outdoor exercise is comfortable.
+- A photographer may care about suitable outdoor conditions.
+- A traveler may want to understand upcoming weather.
+- A cyclist may need to consider rain and wind.
+- A student may want to plan outdoor study.
+- An agriculture-focused user may require weather information for planning outdoor activities.
+
+Mausam brings these contexts together through personalization.
+
+---
+
+# 🎯 Solution
+
+Mausam combines three major inputs:
+
+```text
+             LIVE WEATHER
+                  +
+           USER INTERESTS
+                  +
+        LOCATION INFORMATION
+                  │
+                  ▼
+       ┌────────────────────┐
+       │  MAUSAM ENGINE      │
+       │                    │
+       │ Personalization    │
+       │ Recommendation     │
+       │ Planning           │
+       └─────────┬──────────┘
+                 │
+                 ▼
+       ACTIONABLE INSIGHTS
