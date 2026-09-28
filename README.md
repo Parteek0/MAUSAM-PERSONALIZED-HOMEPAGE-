@@ -12,9 +12,6 @@ The core idea behind Mausam is simple:
 
 > **Weather information becomes more useful when it is personalized according to the person using it.**
 
-<!-- TODO: Add badges here, e.g. license, tech stack, live demo -->
-<!-- [FILL IN] 🔗 Live Demo: <link> | 🎥 Demo Video: <link> -->
-
 ---
 
 ## 📑 Table of Contents
@@ -25,16 +22,10 @@ The core idea behind Mausam is simple:
 4. [Key Features](#-3-key-features)
 5. [How Personalization Works](#-4-how-personalization-works)
 6. [System Architecture](#️-5-system-architecture)
-7. [Tech Stack](#️-6-tech-stack)
-8. [Data Sources](#-7-data-sources)
-9. [Screenshots](#-8-screenshots)
-10. [Getting Started](#-9-getting-started)
-11. [Project Structure](#-10-project-structure)
-12. [What Makes Mausam Different](#-11-what-makes-mausam-different)
-13. [Limitations](#️-12-limitations)
-14. [Future Scope](#-13-future-scope)
-15. [Team](#-team)
-16. [License](#-license)
+7. [What Makes Mausam Different](#-6-what-makes-mausam-different)
+8. [Limitations](#️-7-limitations)
+9. [Future Scope](#-8-future-scope)
+10. [Team](#-team)
 
 ---
 
@@ -121,39 +112,21 @@ RECOMMENDATION ENGINE
 
 # ✨ 3. Key Features
 
-<!-- Keep only the features that are actually implemented. Mark planned ones under Future Scope. -->
+- 📍 **Location-aware weather** — weather information based on the user's location
+- 🎯 **Interest-based personalization** — profiles such as Runner, Cyclist, Photographer, Traveler, Student and Agriculture
+- 🧠 **Contextual recommendations** — plain-language guidance instead of raw numbers alone
+- 📡 **Live meteorological data** — built around live IMD data
 
-- 📍 **Location-aware weather** — automatic or manual location selection
-- 🎯 **Interest-based personalization** — choose profiles such as Runner, Cyclist, Photographer, Traveler, Student, Agriculture
-- 🧠 **Contextual recommendations** — plain-language guidance such as "Good conditions for a morning run" instead of raw numbers alone
-- 📡 **Live meteorological data**
-- 🔔 **Alerts** 
-- 🌐 **Multi-language support**
-- 📱 **Responsive homepage** 
 ---
 
 # 🧠 4. How Personalization Works
 
-`[FILL IN: replace with your real logic. Below is a template to adapt.]`
+1. **Input** – The user provides their location and interests.
+2. **Fetch** – Live weather data is retrieved for that location.
+3. **Personalize** – The personalization engine interprets the weather according to the user's interests.
+4. **Recommend** – The recommendation engine converts the result into clear, actionable insights.
 
-1. **Input** – The user selects location and one or more interests.
-2. **Fetch** – Current conditions and forecast are retrieved for that location.
-3. **Score** – Each interest has its own rules or weights over weather variables.
-4. **Recommend** – The engine turns scores into a verdict and short advice.
-
-### Example: Runner profile
-
-| Factor        | Ideal condition       | Effect on score |
-| ------------- | --------------------- | --------------- |
-| Temperature   | `[FILL IN]` °C range  | `[FILL IN]`     |
-| Rainfall      | None / light          | `[FILL IN]`     |
-| Wind speed    | Below `[FILL IN]` km/h| `[FILL IN]`     |
-| Humidity      | `[FILL IN]`           | `[FILL IN]`     |
-| AQI (if used) | `[FILL IN]`           | `[FILL IN]`     |
-
-**Output example:** `Good for running (Score: 8/10). Best window: 6–8 AM.`
-
-> Is the engine **rule-based**, **weighted scoring**, or **ML-based**? State it clearly here. Judges value clarity on this.
+For example, the same rainfall and wind conditions can mean "good to go" for one user and "better to wait" for another, depending on their activity.
 
 ---
 
@@ -161,127 +134,39 @@ RECOMMENDATION ENGINE
 
 ```mermaid
 flowchart TD
-    A[User] --> B[Frontend / Personalized Homepage]
-    B --> C[Backend API]
-    C --> D[Weather Data Source - IMD]
-    C --> E[Personalization Engine]
-    E --> F[Recommendation Engine]
-    F --> C
-    C --> B
-```
-
-`[FILL IN: update the diagram to match your real components, e.g. database, auth, cache.]`
-
----
-
-# 🛠️ 6. Tech Stack
-
-| Layer            | Technology        |
-| ---------------- | ----------------- |
-| Frontend         | `[FILL IN]`       |
-| Backend          | `[FILL IN]`       |
-| Database         | `[FILL IN / None]`|
-| Weather Data     | IMD `[FILL IN: API / dataset]` |
-| Hosting          | `[FILL IN]`       |
-| Tools            | Git, GitHub `[FILL IN]` |
-
----
-
-# 📡 7. Data Sources
-
-| Source | Data used | Update frequency | Notes |
-| ------ | --------- | ---------------- | ----- |
-| IMD `[FILL IN]` | Temperature, humidity, rainfall, wind `[FILL IN]` | `[FILL IN]` | `[FILL IN: access method, API key needed?]` |
-
-> **Disclaimer:** Mausam is a student prototype built for Smart India Hackathon 2026. It is not an official IMD product and is not affiliated with or endorsed by IMD or MoES. `[Keep only if accurate for your project.]`
-
----
-
-# 🖼️ 8. Screenshots
-
-<!-- Add images to a /screenshots folder, then link them like this: -->
-
-| Home | Personalization | Recommendations |
-| ---- | --------------- | --------------- |
-| ![Home](screenshots/home.png) | ![Personalization](screenshots/personalization.png) | ![Recommendations](screenshots/recommendations.png) |
-
----
-
-# 🚀 9. Getting Started
-
-### Prerequisites
-
-- `[FILL IN: e.g. Node.js 18+ / Python 3.10+]`
-- Git
-- `[FILL IN: API keys if required]`
-
-### Installation
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/Parteek0/MAUSAM-PERSONALIZED-HOMEPAGE-.git
-cd MAUSAM-PERSONALIZED-HOMEPAGE-
-
-# 2. Install dependencies
-# [FILL IN: e.g. npm install  |  pip install -r requirements.txt]
-
-# 3. Configure environment variables
-# [FILL IN: e.g. cp .env.example .env, then add your keys]
-
-# 4. Run the project
-# [FILL IN: e.g. npm run dev  |  python app.py]
-```
-
-Then open `http://localhost:[FILL IN PORT]` in your browser.
-
-### Environment Variables
-
-| Variable | Description | Required |
-| -------- | ----------- | -------- |
-| `[FILL IN]` | `[FILL IN]` | `[Yes/No]` |
-
----
-
-# 📁 10. Project Structure
-
-```
-MAUSAM-PERSONALIZED-HOMEPAGE-/
-├── [FILL IN: frontend/ or src/]
-├── [FILL IN: backend/ or api/]
-├── screenshots/
-├── README.md
-└── [FILL IN: other files]
+    A[User: Location + Interests] --> C[Personalization Engine]
+    B[Live Weather Data] --> C
+    C --> D[Recommendation Engine]
+    D --> E[Actionable Insights]
 ```
 
 ---
 
-# 🔍 11. What Makes Mausam Different
+# 🔍 6. What Makes Mausam Different
 
-Many weather apps show data, and some offer activity tips. Mausam's focus is:
+Many weather platforms focus on displaying data. Mausam focuses on **meaning**:
 
-- **Interest-first design** – the homepage is built around *who the user is*, not a fixed dashboard.
-- **Indian context** – built around IMD data and regional needs `[FILL IN: e.g. agriculture, monsoon, heat waves]`.
-- **Actionable output** – every data point is translated into a decision or suggestion.
-- `[FILL IN: your unique edge, e.g. explainable scores, a specific persona, offline support]`
-
----
-
-# ⚠️ 12. Limitations
-
-- Recommendations are guidance only and not a substitute for official warnings.
-- `[FILL IN: e.g. limited cities, prototype-level accuracy, depends on API availability]`
+- **Interest-first design** — the experience is built around who the user is, not a fixed dashboard.
+- **Actionable output** — weather data is translated into decisions and suggestions.
+- **Indian context** — built around IMD data for Indian users.
 
 ---
 
-# 🔮 13. Future Scope
+# ⚠️ 7. Limitations
 
-- 📱 Native mobile app
-- 🤖 ML-based personalization learned from user behaviour
+- Recommendations are guidance only and are not a substitute for official weather warnings.
+- Mausam is a student prototype built for Smart India Hackathon 2026. It is not an official IMD product.
+
+---
+
+# 🔮 8. Future Scope
+
+- 📱 Native mobile application
+- 🤖 Machine-learning-based personalization
 - 🔔 Push notifications for severe weather
 - 🗣️ More regional languages
-- 🌾 Deeper agriculture support (crop-specific advisories)
-- 🌫️ Air quality, UV index and pollen integration
-- `[FILL IN: your own ideas]`
+- 🌾 Deeper agriculture support
+- 🌫️ Air quality and UV index integration
 
 ---
 
@@ -298,12 +183,6 @@ Many weather apps show data, and some offer activity tips. Mausam's focus is:
 | Dr. Sukhvir Singh | Mentor       |
 
 *Panjab University, UIET, Chandigarh*
-
----
-
-# 📄 License
-
-`[FILL IN: e.g. MIT License. Add a LICENSE file to the repo.]`
 
 ---
 
